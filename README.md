@@ -1,5 +1,7 @@
 # cxIndentHighlight.nvim
 
+> **Fixes snacks.indent:** its guide `char` is snapshotted once and shared by every buffer, so the width can't follow each file's `shiftwidth` — this plugin renders it `shiftwidth` cells wide, per buffer.
+
 A minimal indent guide. Each indentation level is filled with `shiftwidth` cells
 (spaces by default), cycled through a list of highlight groups. The fill width
 tracks **each buffer's `shiftwidth`**, so a `sw=2` file gets 2-cell guides and a
